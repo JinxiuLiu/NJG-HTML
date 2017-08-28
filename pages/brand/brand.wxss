@@ -1,0 +1,90 @@
+page {
+	background-color: #f5f5f5;
+}
+
+.hot_brand {
+	width: 92%;
+	padding: 8px 4%;
+	font-size: 14px;
+	background-color: #fff;
+}
+
+.hot_brand_list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.hot_single {
+	width: 20%;
+	padding-top: 8px;
+	text-align: center;
+}
+
+.hot_single image {
+	width: 100%;
+	height: 30px;
+}
+
+.cities text {
+	display: block;
+	width: 92%;
+	line-height: 28px;
+	margin: 0 4%;
+	color: #999;
+	font-size: 12px;
+}
+
+.city_type {
+	background-color: #fff;
+}
+
+.city_type text {
+	font-size: 14px;
+	color: #333;
+}
+
+.city_type text:last-child {
+	border-bottom: 0;
+}
+
+/* 车系 */
+.cars_brand {
+    top: 51px;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    overflow: auto;
+    background-color: #F5F5F5;
+}
+
+.cars_series,
+.cars_type {
+	position: fixed;
+    top: 51px;
+    right: 0;
+    width: 70%;
+    height: 91.7%;
+    z-index: 999;
+    overflow: auto;
+    background-color: #F5F5F5;
+    -webkit-box-shadow: -8px 0 6px -5px #ebebeb;
+    -moz-box-shadow: -8px 0 6px -5px #ebebeb;
+    box-shadow: -8px 0 6px -5px #ebebeb;
+}
+
+.cars_type {
+	width: 40%;
+}
+
+.select_cars_list {
+	width: 96%;
+	padding-right: 4%;
+}
+
+.select_cars_list image {
+	padding-top: 5px;
+}
+
+.active text {
+	color: #e62129;
+}

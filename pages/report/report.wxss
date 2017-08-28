@@ -1,0 +1,70 @@
+page {  
+  display: block;  
+  background-color: #f5f5f5;  
+}
+
+.city_header {
+	background-color: #fff;
+}
+
+.report_tit {
+	width: 92%;
+	line-height: 30px;
+	padding: 0 4%;
+	font-size: 16px;
+	color: #333;
+}
+
+.report_tag {
+	display: flex;
+	flex-wrap: wrap;
+	width: 96%;
+	padding: 4px 2%;
+	background-color: #fff;
+	font-size: 14px;
+	color: #999;
+}
+
+.report_tag text {
+	width: 20.4%;
+	line-height: 20px;
+	margin: 4px 2%;
+	border: 1px solid #999;
+	border-radius: 2px;
+	text-align: center;
+}
+
+text.active {
+	border-color: #e62129;
+	color: #e62129;
+}
+
+.report_state {
+	width: 92%;
+	padding: 8px 4%;
+	background-color: #fff;
+}
+
+.report_state textarea {
+	width: auto;
+	height: 80px;
+	font-size: 14px;
+	color: #999;
+}
+
+.textarea-placeholder {
+	font-size: 14px;
+	color: #999;
+}
+
+.report_btn button {
+    width: 92%;
+    line-height: 40px;
+    margin: 60px auto 0;
+    border: 0;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #e62129;
+    font-size: 16px;
+}

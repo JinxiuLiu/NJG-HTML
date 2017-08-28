@@ -1,0 +1,159 @@
+/* search */
+.search {
+	display: flex;
+	width: 92%;
+	height: 50px;
+	padding: 0 4%;
+	border-bottom: 1px solid #ececec;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	background-color: #fff;
+}
+
+navigator {
+	line-height: 50px;
+}
+
+.search image {
+	width: 30rpx;
+	height: 34rpx;
+	padding-right: 3px;
+	vertical-align: sub;
+}
+
+.search text {
+	line-height: 30px;
+	font-size: 14px;
+	color: #e62129;
+}
+
+.search_box {
+	display: flex;
+	flex: 1;
+	height: 30px;
+	padding-left: 15px;
+	margin: 10px 0 0 10px;
+	background-color: #f7f7f7;
+}
+
+.search_box icon {
+	padding-top: 8px;
+}
+
+.search_box text {
+	flex: 1;
+	padding-left: 5px;
+	color: #999;
+}
+
+/* 排序 */
+.list_sort {
+	display: flex;
+	flex-wrap: wrap;
+	width: 92%;
+	line-height: 32px;
+	padding: 0 4%;
+	position: fixed;
+	top: 51px;
+	z-index: 99;
+	font-size: 14px;
+	border-bottom: 1px solid #f5f5f5;
+	color: #333;
+	background-color: #fff;
+}
+
+.sort_list {
+	width: 24.7%;
+	text-align: center;
+	border-right: 1px solid #ececec;
+}
+
+.sort_list:last-child {
+	border-right: 0;
+}
+
+.sort_list image {
+	width: 13px;
+	height: 13px;
+	vertical-align: middle;
+}
+
+.sort_list text {
+	display: inline-block;
+	width: 55%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: bottom;
+}
+
+.select_cars,
+.select_sort,
+.select_price {
+	position: fixed;
+	top: 85px;
+	z-index: 999;
+	width: 92%;
+	padding: 0 4%;
+	background-color: #fff;
+}
+
+.select_cars text,
+.select_sort text {
+	display: block;
+	flex: 1;
+	line-height: 35px;
+	font-size: 13px;
+}
+
+.select_cars text:last-child,
+.select_sort text:last-child {
+	border-bottom: 0;
+}
+
+.select {
+	border-bottom: 1px solid #e62129;
+}
+
+.select text {
+	color: #e62129;
+}
+
+.select_price {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 6px 4%;
+}
+
+.select_price text {
+	width: 29%;
+	line-height: 30px;
+	margin: 6px 1.8%; 
+	border: 1px solid #acacac;
+	border-radius: 2px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.select_price .boractive {
+	border: 1px solid #e62129;
+	color: #e62129;
+}
+
+/* 遮罩层 */
+.small_overlay {
+	position: fixed;
+  width: 100%;
+  height: 80%;
+  bottom: 0;
+  left: 0;
+  z-index: 666;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.loadmore{
+	line-height: 35px;
+	font-size: 15px;
+	text-align: center;
+}

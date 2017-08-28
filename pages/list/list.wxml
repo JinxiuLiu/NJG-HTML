@@ -1,0 +1,335 @@
+<!-- search -->
+<view class="search">
+	<navigator url="../city/city" hover-class="none">
+		<image src="../../images/coord.png" mode="aspectFit"></image>
+		<text>{{city}}</text>
+	</navigator>
+	<view bindtap="clickSearch" class="search_box">
+		<icon type="search" size="14"/>
+	    <text>请输入品牌或车型</text>
+	</view>
+</view>
+<!-- 排序 -->
+<view class="list_sort">
+	<view class="sort_list {{isCars ? '' : 'select'}}" bindtap="selectCars">
+		<text>车源</text>
+		<image src="{{isCars ? '../../images/buttom.png' : '../../images/top-red.png'}}"></image>
+	</view>
+	<view class="sort_list" bindtap="selectBrand">
+		<text>品牌</text>
+		<image src="../../images/buttom.png"></image>
+	</view>
+	<view class="sort_list {{isPrice ? '' : 'select'}}" bindtap="selectPrice">
+		<text>价格</text>
+		<image src="{{isPrice ? '../../images/buttom.png' : '../../images/top-red.png'}}"></image>
+	</view>
+	<view class="sort_list {{isSort ? '' : 'select'}}" bindtap="selectSort">
+		<text>排序</text>
+		<image src="{{isSort ? '../../images/buttom.png' : '../../images/top-red.png'}}"></image>
+	</view>
+</view>
+<!-- 选择车源 -->
+<view class="select_cars" hidden="{{isCars}}">
+	<view class="select_cars_list colorred">
+		<text>全部车源</text>
+		<image src="../../images/dui.png"></image>
+	</view>
+	<view class="select_cars_list">
+		<text>个人</text>
+	</view>
+	<view class="select_cars_list">
+		<text>经销商</text>
+	</view>
+	<view class="select_cars_list">
+		<text>二手车商</text>
+	</view>
+	<view class="select_cars_list">
+		<text>厂家</text>
+	</view>
+	<view class="select_cars_list">
+		<text>自营</text>
+	</view>
+	<view class="select_cars_list">
+		<text>合作社</text>
+	</view>
+</view>
+<view class="small_overlay" hidden="{{isCars}}"  bindtap="selectCars"></view>
+<!-- 选择价格 -->
+<view class="select_price" hidden="{{isPrice}}">
+	<text class="boractive">不限</text>
+	<text>3万以下</text>
+	<text>3-5万</text>
+	<text>5-8万</text>
+	<text>不限</text>
+	<text>3万以下</text>
+	<text>3-5万</text>
+	<text>5-8万</text>
+</view>
+<view class="small_overlay" hidden="{{isPrice}}"  bindtap="selectPrice"></view>
+<!-- 选择排序 -->
+<view class="select_sort" hidden="{{isSort}}">
+	<view class="select_cars_list colorred">
+		<text>默认排序</text>
+		<image src="../../images/dui.png"></image>
+	</view>
+	<view class="select_cars_list">
+		<text>最新发布</text>
+	</view>
+	<view class="select_cars_list">
+		<text>价格最低</text>
+	</view>
+	<view class="select_cars_list">
+		<text>价格最高</text>
+	</view>
+	<view class="select_cars_list">
+		<text>生产日期</text>
+	</view>
+	<view class="select_cars_list">
+		<text>时长最短</text>
+	</view>
+</view>
+<view class="small_overlay" hidden="{{isSort}}"  bindtap="selectSort"></view>
+<view style="height:88px;"></view>
+
+<!-- 列表 -->
+<view class="carlist" bindtap="clickList">
+	<view class="carlist_top">
+		<view class="car_imgs">
+			<text class="newtop">新上</text>
+			<image src="http://img1.nongjigou.com/FolOU0hcHtKLdd8pZ3ymackDOVdJ?imageView2/1/w/300/h/225/q/88" mode="aspectFit"></image>
+			<text class="picnum">6图</text>
+		</view>
+		<view class="car_info">
+			<text class="car_name">福田雷沃 M1104-D 轮式拖拉机轮式拖拉机</text>
+			<text class="car_hid">山东青岛 | 2013年 | 460小时 | 1台</text>
+			<view class="car_present">
+				<view class="car_price">
+					<text class="current_price">￥6.30万</text>
+					<text class="original_price">￥9.80万</text>
+				</view>
+				<view class="car_tag">
+					<text>急售</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="carlist_buttom">
+		<view><text class="owner_sm">实名认证</text></view>
+		<view><text class="owner_name">马可波罗</text></view>
+		<view class="owner_time"><text>20分钟前</text></view>
+	</view>
+</view>
+
+<!-- 列表 -->
+<view class="carlist">
+	<view class="carlist_top">
+		<view class="car_imgs">
+			<image src="http://img1.nongjigou.com/FolOU0hcHtKLdd8pZ3ymackDOVdJ?imageView2/1/w/300/h/225/q/88" mode="aspectFit"></image>
+		</view>
+		<view class="car_info sold">
+			<text class="car_name">福田雷沃 M1104-D 轮式拖拉机轮式拖拉机</text>
+			<text class="car_hid">山东青岛 | 2013年 | 460小时 | 1台</text>
+			<view class="car_present">
+				<view class="car_price">
+					<text class="current_price">￥6.30万</text>
+					<text class="original_price">￥9.80万</text>
+				</view>
+				<view class="car_tag">
+					<text>电话核实</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="carlist_buttom">
+		<view><text class="owner_rz">认证车行</text></view>
+		<view><text class="owner_name">马可波罗</text></view>
+		<view class="owner_time"><text>20分钟前</text></view>
+	</view>
+</view>
+
+<!-- 列表 -->
+<view class="carlist">
+	<view class="carlist_top">
+		<view class="car_imgs">
+			<image src="http://img1.nongjigou.com/FolOU0hcHtKLdd8pZ3ymackDOVdJ?imageView2/1/w/300/h/225/q/88" mode="aspectFit"></image>
+		</view>
+		<view class="car_info">
+			<text class="car_name">福田雷沃 M1104-D 轮式拖拉机轮式拖拉机</text>
+			<text class="car_hid">山东青岛 | 2013年 | 460小时 | 1台</text>
+			<view class="car_present">
+				<view class="car_price">
+					<text class="current_price">￥6.30万</text>
+					<text class="original_price">￥9.80万</text>
+				</view>
+				<view class="car_tag">
+					<text>急售</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="carlist_buttom">
+		<text class="owner_name">马可波罗</text>
+		<text class="owner_time">20分钟前</text>
+	</view>
+</view>
+
+<!-- 列表 -->
+<view class="carlist">
+	<view class="carlist_top">
+		<view class="car_imgs">
+			<image src="http://img1.nongjigou.com/FolOU0hcHtKLdd8pZ3ymackDOVdJ?imageView2/1/w/300/h/225/q/88" mode="aspectFit"></image>
+		</view>
+		<view class="car_info">
+			<text class="car_name">福田雷沃 M1104-D 轮式拖拉机轮式拖拉机</text>
+			<text class="car_hid">山东青岛 | 2013年 | 460小时 | 1台</text>
+			<view class="car_present">
+				<view class="car_price">
+					<text class="current_price">￥6.30万</text>
+					<text class="original_price">￥9.80万</text>
+				</view>
+				<view class="car_tag">
+					<text>急售</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="carlist_buttom">
+		<text class="owner_name">马可波罗</text>
+		<text class="owner_time">20分钟前</text>
+	</view>
+</view>
+
+<!-- 列表 -->
+<view class="carlist">
+	<view class="carlist_top">
+		<view class="car_imgs">
+			<image src="http://img1.nongjigou.com/FolOU0hcHtKLdd8pZ3ymackDOVdJ?imageView2/1/w/300/h/225/q/88" mode="aspectFit"></image>
+		</view>
+		<view class="car_info">
+			<text class="car_name">福田雷沃 M1104-D 轮式拖拉机轮式拖拉机</text>
+			<text class="car_hid">山东青岛 | 2013年 | 460小时 | 1台</text>
+			<view class="car_present">
+				<view class="car_price">
+					<text class="current_price">￥6.30万</text>
+					<text class="original_price">￥9.80万</text>
+				</view>
+				<view class="car_tag">
+					<text>急售</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="carlist_buttom">
+		<text class="owner_name">马可波罗</text>
+		<text class="owner_time">20分钟前</text>
+	</view>
+</view>
+
+<!-- 列表 -->
+<view class="carlist">
+	<view class="carlist_top">
+		<view class="car_imgs">
+			<image src="http://img1.nongjigou.com/FolOU0hcHtKLdd8pZ3ymackDOVdJ?imageView2/1/w/300/h/225/q/88" mode="aspectFit"></image>
+		</view>
+		<view class="car_info">
+			<text class="car_name">福田雷沃 M1104-D 轮式拖拉机轮式拖拉机</text>
+			<text class="car_hid">山东青岛 | 2013年 | 460小时 | 1台</text>
+			<view class="car_present">
+				<view class="car_price">
+					<text class="current_price">￥6.30万</text>
+					<text class="original_price">￥9.80万</text>
+				</view>
+				<view class="car_tag">
+					<text>急售</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="carlist_buttom">
+		<text class="owner_name">马可波罗</text>
+		<text class="owner_time">20分钟前</text>
+	</view>
+</view>
+
+<!-- 列表 -->
+<view class="carlist">
+	<view class="carlist_top">
+		<view class="car_imgs">
+			<image src="http://img1.nongjigou.com/FolOU0hcHtKLdd8pZ3ymackDOVdJ?imageView2/1/w/300/h/225/q/88" mode="aspectFit"></image>
+		</view>
+		<view class="car_info">
+			<text class="car_name">福田雷沃 M1104-D 轮式拖拉机轮式拖拉机</text>
+			<text class="car_hid">山东青岛 | 2013年 | 460小时 | 1台</text>
+			<view class="car_present">
+				<view class="car_price">
+					<text class="current_price">￥6.30万</text>
+					<text class="original_price">￥9.80万</text>
+				</view>
+				<view class="car_tag">
+					<text>急售</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="carlist_buttom">
+		<text class="owner_name">马可波罗</text>
+		<text class="owner_time">20分钟前</text>
+	</view>
+</view>
+
+<!-- 列表 -->
+<view class="carlist">
+	<view class="carlist_top">
+		<view class="car_imgs">
+			<image src="http://img1.nongjigou.com/FolOU0hcHtKLdd8pZ3ymackDOVdJ?imageView2/1/w/300/h/225/q/88" mode="aspectFit"></image>
+		</view>
+		<view class="car_info">
+			<text class="car_name">福田雷沃 M1104-D 轮式拖拉机轮式拖拉机</text>
+			<text class="car_hid">山东青岛 | 2013年 | 460小时 | 1台</text>
+			<view class="car_present">
+				<view class="car_price">
+					<text class="current_price">￥6.30万</text>
+					<text class="original_price">￥9.80万</text>
+				</view>
+				<view class="car_tag">
+					<text>急售</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="carlist_buttom">
+		<text class="owner_name">马可波罗</text>
+		<text class="owner_time">20分钟前</text>
+	</view>
+</view>
+
+<!-- 列表 -->
+<view class="carlist">
+	<view class="carlist_top">
+		<view class="car_imgs">
+			<image src="http://img1.nongjigou.com/FolOU0hcHtKLdd8pZ3ymackDOVdJ?imageView2/1/w/300/h/225/q/88" mode="aspectFit"></image>
+		</view>
+		<view class="car_info">
+			<text class="car_name">福田雷沃 M1104-D 轮式拖拉机轮式拖拉机</text>
+			<text class="car_hid">山东青岛 | 2013年 | 460小时 | 1台</text>
+			<view class="car_present">
+				<view class="car_price">
+					<text class="current_price">￥6.30万</text>
+					<text class="original_price">￥9.80万</text>
+				</view>
+				<view class="car_tag">
+					<text>急售</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="carlist_buttom">
+		<text class="owner_name">马可波罗</text>
+		<text class="owner_time">20分钟前</text>
+	</view>
+</view>
+
+<!-- 加载更多 -->
+<view class="loadmore">
+	<text>{{loadMore}}</text>
+</view>

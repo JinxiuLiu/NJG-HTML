@@ -1,0 +1,620 @@
+page {  
+  display: block;  
+  background-color: #f5f5f5;  
+}
+
+.font16 {
+	font-size: 16px;
+	color: #e62129;
+}
+
+.mb8 {
+	margin-bottom: 8px;
+}
+
+.tac {
+	text-align: center;
+}
+
+.tar {
+	text-align: right;
+}
+
+.cars_header_active {
+	background-color: #fff;
+	border-bottom: 1px solid #ececec;
+}
+
+.cars_header {
+	display: flex;
+	width: 92%;
+	line-height: 50px;
+	padding: 0 4%;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+
+.cars_header image {
+	width: 18px;
+	height: 18px;
+	padding-top: 17px;
+}
+
+.cars_header text {
+	flex: 1;
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* 轮播图 */
+.slide {
+	position: relative;
+}
+
+swiper {
+	height: 251px;
+}
+
+.slide-image {
+	width: 100%;
+	height: 100%;
+}
+
+.cars_num {
+	position: absolute;
+	left: 8px;
+	bottom: 8px;
+}
+
+.cars_num text {
+    display: block;
+    width: 100px;
+	font-size: 12px;
+    line-height: 18px;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    text-align: center;
+}
+
+/* 详细信息 */
+.cars_info {
+	width: 92%;
+	padding: 0 4% 6px;
+	font-size: 15px;
+	background-color: #fff;
+}
+
+.cars_info_header {
+	display: flex;
+	line-height: 40px;
+}
+
+.cars_info_name {
+	width:80%;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.cars_share {
+	flex: 1;
+	text-align: right;
+	position: relative;
+}
+
+.cars_share text {
+	padding-right: 20px;
+	color: #e62129;
+}
+
+.cars_share image {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+
+.cars_label {
+	display: flex;
+	font-size: 12px;
+}
+
+.cars_tag {
+	padding: 2px;
+	border: 1px solid #e62129;
+	color: #e62129;
+}
+
+.cars_pv {
+	flex: 1;
+	line-height: 20px;
+	text-align: right;
+}
+
+.cars_price {
+	display: flex;
+	padding: 7px 0;
+	font-size: 12px;
+}
+
+.cars_area {
+	flex: 1;
+	line-height:20px;
+	text-align: right;
+}
+
+.cars_area image {
+	width: 13px;
+	height: 13px;
+	vertical-align: middle;
+}
+
+.cars_bid_record image {
+	width: 16px;
+	height: 16px;
+}
+
+.cars_bid {
+	display: flex;
+	line-height: 28px;
+	font-size: 14px;
+	border-top: 1px solid #f5f5f5;
+}
+
+.cars_bid_num {
+	color: #e62129; 
+}
+
+.cars_bid_look {
+	flex: 1;
+	text-align: right;
+	color: #e62129; 
+}
+
+.cars_bid_look image {
+	width: 18px;
+	height: 18px;
+	padding-right:6px;
+	vertical-align: middle;
+}
+
+.cars_bid_info {
+	height: 135px;
+	overflow: auto;
+	background-color: #f5f5f5;
+}
+
+.cars_bid_list {
+	display: flex;
+	flex-wrap: wrap;
+	line-height: 26px;
+	font-size: 14px;
+	border-bottom: 1px solid #fff;
+	color: #555;
+}
+
+.cars_bid_list text {
+	width: 33%;
+}
+
+/* 基本信息 */
+.cars_basic,
+.owner_desc,
+.cars_ques,
+.cars_recom {
+	width: 92%;
+	padding: 0 4% 8px;
+	background-color: #fff;
+}
+
+.cars_basic_header {
+	display:flex;
+	line-height:16px;
+	padding:8px 0;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.cars_basuc_left {
+	padding-left: 8px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+	border-left: 4px solid #e62129;
+}
+
+.cars_basic_right {
+	flex: 1;
+	font-size: 12px;
+	text-align: right;
+}
+
+.cars_basic_right image {
+	width: 12px;
+	height: 12px;
+	padding-right: 2px;
+	vertical-align: middle;
+}
+
+.cars_issue_time {
+	color: #e62129;
+}
+
+.cars_basic_list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.basic_list_tag {
+	width: 33%;
+	padding-top: 6px;
+	text-align: center;
+}
+
+.basic_list_tag text {
+	display: block;
+	line-height: 18px;
+}
+
+.tag_txt {
+	font-size: 14px;
+	color: #666;
+}
+
+.tag_tit {
+	font-size: 12px;
+	color: #999;
+}
+
+.desc_info {
+	line-height: 20px;
+	padding-top: 8px;
+	font-size: 14px;
+	color: #505050;
+}
+
+/* 举报车辆 */
+.cars_report {
+	padding: 15px 0;
+	background-color: #fff;
+}
+
+.cars_report text {
+	display: block;
+	width: 160px;
+	line-height: 20px;
+	margin: 0 auto;
+	font-size: 14px;
+    border-radius: 2px;
+	border: 1px solid #e62129;
+	text-align: center;
+	color: #e62129;
+}
+
+/* 购车问答 */
+.questions {
+	flex: 1;
+	font-size: 14px;
+	text-align: right;
+	color: #666;
+}
+
+.questions image {
+	width: 15px;
+	height: 15px;
+	padding-left: 5px;
+	vertical-align: text-top;
+}
+
+.ques_info {
+	padding-top: 8px;
+}
+
+.ques_name {
+	display: flex;
+	color: #666;
+	font-size: 12px;
+}
+
+.ques_time {
+	flex: 1;
+	text-align: right;
+}
+
+.ques_issue {
+	line-height: 16px;
+	padding: 6px 0 18px;
+	font-size: 12.5px;
+	color: #333;
+}
+
+.ques_service {
+	padding: 8px;
+    background: #F0F2F5;
+    border-radius: 4px;
+    position: relative;
+}
+
+.ques_service:before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 1px;
+    border: 10px solid #FFF;
+    border-bottom: 10px solid #F0F2F5;
+    position: absolute;
+    top: -20px;
+    left: 30px;
+}
+
+.service_tit {
+	line-height: 16px;
+	font-size: 14px;
+	color: #666;
+}
+
+.service_tit image {
+	width: 18px;
+	height: 18px;
+	padding-right: 8px;
+	vertical-align: text-bottom;
+}
+
+.service_txt {
+	padding-top: 5px;
+	font-size: 14px;
+	color: #333;
+}
+
+.look_more {
+	padding-top: 8px;
+}
+
+.look_more text {
+	display: block;
+	width: 80px;
+	line-height: 16px;
+	margin: 0 auto;
+	font-size: 12px;
+	border-radius: 2px;
+	border: 1px solid #e62129;
+	text-align: center;
+	color: #e62129;
+}
+
+/* 相关推荐 */
+.cars_recom {
+	padding-bottom: 0;
+}
+
+/* fonter */
+.cars_footer {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+}
+
+.cars_footer view {
+	display: inline-block;
+	width: 50%;
+}
+
+.cars_footer button {
+	line-height: 50px;
+	position: static;
+	border-radius: 0;
+	color: #fff;
+}
+
+.tel button {
+	background-color: #ff7e00;
+}
+
+.offer button {
+	background-color: #e62129;
+}
+
+/* 遮罩层 */
+.overlay {
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 666;
+    background-color: rgba(0,0,0,0.5);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* 提问model */
+.ques_model,
+.consult_model,
+.bid_model {
+	position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: auto;
+    z-index: 999;
+	background-color: #fff;
+	border-radius: 4px;
+}
+
+.model_tit {
+	display: block;
+	width: 100%;
+	line-height: 30px;
+	padding: 5px 0;
+	font-size: 18px;
+	color: #333;
+	text-align: center;
+}
+
+.ques_model textarea {
+	width: 80%;
+	height: 100px;
+	padding: 8px;
+	margin: 0 auto;
+	font-size: 14px;
+	border-radius: 4px;
+	background-color: #f5f5f5;
+}
+
+.textarea-placeholder {
+	font-size: 14px;
+	color: #666;
+}
+
+.ques_model_btn {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	border-top: 1px solid #dedede;
+}
+
+.ques_model_btn button {
+	width: 50%;
+	line-height: 40px;
+	border-radius: 0;
+	font-size: 14px;
+    background: none;
+}
+
+.btn_qx {
+	border-right: 1px solid #dedede;
+}
+
+.btn_tw {
+	color: #FF8126;
+}
+
+button::after {
+	content: none;
+}
+
+/* 免费电话 */
+.my_consult {
+	color: #12b7f5;
+	border-bottom: 1px solid #ececec;
+}
+
+.color12b {
+	color: #12b7f5;
+}
+
+.model_txt {
+	display: block;
+	width: 92%;
+    padding: 5px 4%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #333;
+}
+
+.consult_model input {
+	width: 84%;
+    padding: 4px 10px;
+    margin: 8px 4.5%;
+    border: 1px solid #ccc;
+    color: #999;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.consult_model_btn button {
+	width: 92%;
+    line-height: 36px;
+    margin: 15px 4% 8px;
+    border: 0;
+    border-radius: 2px;
+    font-size: 14px;
+    background-color: #e62129;
+    color: #fff;
+}
+
+/* 我的出价 */
+.bid_model input {
+    width: 80%;
+    height: 25px;
+    line-height: 25px;
+    min-height: auto;
+    margin: 5px auto;
+    padding: 4px 10px;
+    background-color: #F5F5F5;
+    border-radius: 2px;
+    border: 0;
+    font-size: 14px;
+}
+
+.bid_sum {
+	display: flex;
+	width:86%;
+	padding:0 7%;
+}
+
+.bid_sum input {
+	width: 75%;
+	margin: 0;
+}
+
+.bid_sum text {
+	flex: 1;
+	line-height: 33px;
+	text-align: right;
+}
+
+.set_num {
+	display: flex;
+	width:87%;
+	padding:10px 7%;
+	font-size: 14px;
+}
+
+.set_as {
+	flex: 1;
+	text-align: right;
+}
+
+.set_as image {
+	width: 16px;
+	height: 16px;
+	vertical-align: sub;
+}
+
+.set_as text {
+	padding: 0 20px;
+	font-size: 16px;
+}
+
+.bid_info {
+	display: block;
+	width: 87%;
+	padding: 0 7% 10px;
+	font-size: 12px;
+	color: #999;
+}
+
+.martop0 {
+	margin-top: 0;
+}
+
+/* 分享 */
+.share_model {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    z-index: 9999;
+    height: 150px;
+    background: url(http://s2.nongjigou.com/images/wenxin_img.png);
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
