@@ -13,149 +13,346 @@
     <link rel="stylesheet" href="./css/index.css">
     <script type="text/javascript" src="http://s2.nongjigou.com/comm/script/jquery.js?v=2.9.8"></script>
     <script type="text/javascript" src="./js/flexible.js"></script>
-    <script></script>
 </head>
 <body>
-	<div class="listview">
-        <div class="list-item one-img">
-            <div class="list-left">
-                <div class="title">现有一台久保田1190急售，需要用钱便宜卖5万，16年5月的车。</div>
-                <div class="bottom-left">
-                    <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
-                    <div class="name">安雅熙 12-06</div>
-                </div>
-            </div>
-            <div class="list-right">
-               <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
-            </div>
-        </div>
-        <div class="list-item">
-            <div class="list-title">
-                <span class="top">置顶</span>
-                <span class="title">现有一台久保田1190急售，需要用钱便宜卖5万，16年5月的车。</span>
-            </div>
-            <div class="list-img">
-                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
-                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
-                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
-            </div>
-            <div class="list-bottom">
-                <div class="bottom-left">
-                    <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
-                    <div class="name">安雅熙 12-06</div>
-                </div>
-                <div class="bottom-right">
-                    <div class="leave">
-                        <yd-icon name="comment21" color="#999" size="14px" custom></yd-icon>
-                        <span>12</span>
-                    </div>
-                    <div class="browse">
-                        <yd-icon name="liulan" color="#999" size="14px" custom></yd-icon>
-                        <span>152</span>
-                    </div>
-                </div>
+	<div class="content">
+        <!-- 轮播图 -->
+        <div id="slideBox" class="slide">
+            <ul class="bd">
+                <li><a href="javascript:;" title=""><img class="lazy" src="http://sta.nongjigou.com/20170814185229_12256.png" alt="" /></a></li>
+                <li><a href="javascript:;" title=""><img class="lazy" src="http://img1.nongjigou.com/20170626143624_96259.png" alt="" /></a></li>
+                <li><a href="javascript:;" title=""><img class="lazy" src="http://img1.nongjigou.com/20170420170440_54610.png" alt="" /></a></li>
+            </ul>
+            <div class="hd">
+                <ul></ul>
             </div>
         </div>
-        <div class="list-item">
-            <div class="list-title">
-                <span class="title">现有一台久保田1190急售，需要用钱便宜卖5万，16年5月的车。</span>
+        <!-- tab栏 -->
+        <div class="njg-tab">
+            <div id="changeTab" class="segmented-control">
+                <a data-item="#item1" class="active">精选热帖</a>
+                <a data-item="#item2">最新热帖</a>
+                <a data-item="#item3">最新帖子</a>
+                <a data-item="#item4">最新二手</a>
             </div>
-            <div class="list-info info-img">
-                而如果行内含有图片和文字，在浏览器渲染出来后，读者可以发现文字和图片在垂直方向并不是沿中线居中，而是沿基线对齐。这是因为，元素默认的垂直对齐方式为基线对齐
-            </div>
-            <div class="list-img">
-                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
-                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
-                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
-            </div>
-            <div class="list-bottom">
-                <div class="bottom-left">
-                    <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
-                    <div class="name">安雅熙 12-06</div>
+            <div class="tab-info">
+                <div id="item1" class="listview active">
+                    <a href="./post-details.html" class="list-item one-img">
+                        <div class="list-left">
+                            <div class="title">现有一台久保田1190急售，需要用钱便宜卖5万，16年5月的车。</div>
+                            <div class="bottom-left">
+                                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
+                                <div class="name">安雅熙 12-06</div>
+                            </div>
+                        </div>
+                        <div class="list-right">
+                           <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
+                        </div>
+                    </a>
+                    <a class="list-item">
+                        <div class="list-title">
+                            <span class="top">置顶</span>
+                            <span class="title">现有一台久保田1190急售，需要用钱便宜卖5万，16年5月的车。</span>
+                        </div>
+                        <div class="list-img">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                        </div>
+                        <div class="list-bottom">
+                            <div class="bottom-left">
+                                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
+                                <div class="name">安雅熙 12-06</div>
+                            </div>
+                            <div class="bottom-right">
+                                <div class="leave">
+                                    <i class="iconfont icon">&#xe70e;</i>
+                                    <span>12</span>
+                                </div>
+                                <div class="browse">
+                                    <i class="iconfont icon">&#xe67c;</i>
+                                    <span>152</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-item">
+                        <div class="list-title">
+                            <span class="title">现有一台久保田1190急售，需要用钱便宜卖5万，16年5月的车。</span>
+                        </div>
+                        <div class="list-info info-img">
+                            而如果行内含有图片和文字，在浏览器渲染出来后，读者可以发现文字和图片在垂直方向并不是沿中线居中，而是沿基线对齐。这是因为，元素默认的垂直对齐方式为基线对齐
+                        </div>
+                        <div class="list-img">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                        </div>
+                        <div class="list-bottom">
+                            <div class="bottom-left">
+                                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
+                                <div class="name">安雅熙 12-06</div>
+                            </div>
+                            <div class="bottom-right">
+                                <div class="leave">
+                                    <i class="iconfont icon">&#xe70e;</i>
+                                    <span>12</span>
+                                </div>
+                                <div class="browse">
+                                    <i class="iconfont icon">&#xe67c;</i>
+                                    <span>152</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-item">
+                        <div class="list-title">
+                            <span class="title">现有一台久保田1190急售，需要用钱便宜卖5万，16年5月的车。</span>
+                        </div>
+                        <div class="list-info">
+                            而如果行内含有图片和文字，在浏览器渲染出来后，读者可以发现文字和图片在垂直方向并不是沿中线居中，而是沿基线对齐。这是因为，元素默认的垂直对齐方式为基线对齐
+                        </div>
+                        <div class="list-bottom">
+                            <div class="bottom-left">
+                                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
+                                <div class="name">安雅熙 12-06</div>
+                            </div>
+                            <div class="bottom-right">
+                                <div class="leave">
+                                    <i class="iconfont icon">&#xe70e;</i>
+                                    <span>12</span>
+                                </div>
+                                <div class="browse">
+                                    <i class="iconfont icon">&#xe67c;</i>
+                                    <span>152</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="bottom-right">
-                    <div class="leave">
-                        <yd-icon name="comment21" color="#999" size="14px" custom></yd-icon>
-                        <span>12</span>
+                <div id="item2" class="listview">
+                    <div class="list-item one-img">
+                        <div class="list-left">
+                            <div class="title">现有一台久保田1190急售，需要用钱便宜卖5万，16年5月的车。</div>
+                            <div class="bottom-left">
+                                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
+                                <div class="name">安雅熙 12-06</div>
+                            </div>
+                        </div>
+                        <div class="list-right">
+                           <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="browse">
-                        <yd-icon name="liulan" color="#999" size="14px" custom></yd-icon>
-                        <span>152</span>
+                    <div class="list-item">
+                        <div class="list-title">
+                            <span class="top">置顶</span>
+                            <span class="title">现有一台久保田1190急售，需要用钱便宜卖5万，16年5月的车。</span>
+                        </div>
+                        <div class="list-img">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                        </div>
+                        <div class="list-bottom">
+                            <div class="bottom-left">
+                                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
+                                <div class="name">安雅熙 12-06</div>
+                            </div>
+                            <div class="bottom-right">
+                                <div class="leave">
+                                    <i class="iconfont icon">&#xe70e;</i>
+                                    <span>12</span>
+                                </div>
+                                <div class="browse">
+                                    <i class="iconfont icon">&#xe67c;</i>
+                                    <span>152</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-title">
+                            <span class="title">现有一台久保田1190急售，需要用钱便宜卖5万，16年5月的车。</span>
+                        </div>
+                        <div class="list-info info-img">
+                            而如果行内含有图片和文字，在浏览器渲染出来后，读者可以发现文字和图片在垂直方向并不是沿中线居中，而是沿基线对齐。这是因为，元素默认的垂直对齐方式为基线对齐
+                        </div>
+                        <div class="list-img">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                        </div>
+                        <div class="list-bottom">
+                            <div class="bottom-left">
+                                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
+                                <div class="name">安雅熙 12-06</div>
+                            </div>
+                            <div class="bottom-right">
+                                <div class="leave">
+                                    <i class="iconfont icon">&#xe70e;</i>
+                                    <span>12</span>
+                                </div>
+                                <div class="browse">
+                                    <i class="iconfont icon">&#xe67c;</i>
+                                    <span>152</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-title">
+                            <span class="title">现有一台久保田1190急售，需要用钱便宜卖5万，16年5月的车。</span>
+                        </div>
+                        <div class="list-info">
+                            而如果行内含有图片和文字，在浏览器渲染出来后，读者可以发现文字和图片在垂直方向并不是沿中线居中，而是沿基线对齐。这是因为，元素默认的垂直对齐方式为基线对齐
+                        </div>
+                        <div class="list-bottom">
+                            <div class="bottom-left">
+                                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
+                                <div class="name">安雅熙 12-06</div>
+                            </div>
+                            <div class="bottom-right">
+                                <div class="leave">
+                                    <i class="iconfont icon">&#xe70e;</i>
+                                    <span>12</span>
+                                </div>
+                                <div class="browse">
+                                    <i class="iconfont icon">&#xe67c;</i>
+                                    <span>152</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="list-item">
-            <div class="list-title">
-                <span class="title">现有一台久保田1190急售，需要用钱便宜卖5万，16年5月的车。</span>
-            </div>
-            <div class="list-info">
-                而如果行内含有图片和文字，在浏览器渲染出来后，读者可以发现文字和图片在垂直方向并不是沿中线居中，而是沿基线对齐。这是因为，元素默认的垂直对齐方式为基线对齐
-            </div>
-            <div class="list-bottom">
-                <div class="bottom-left">
-                    <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
-                    <div class="name">安雅熙 12-06</div>
+                <div id="item3" class="listview">
+                    <div class="list-item one-img">
+                        <div class="list-left">
+                            <div class="title">现有一台久保田1190急售，需要用钱便宜卖5万，16年5月的车。</div>
+                            <div class="bottom-left">
+                                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
+                                <div class="name">安雅熙 12-06</div>
+                            </div>
+                        </div>
+                        <div class="list-right">
+                           <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-title">
+                            <span class="top">置顶</span>
+                            <span class="title">现有一台久保田1190急售，需要用钱便宜卖5万，16年5月的车。</span>
+                        </div>
+                        <div class="list-img">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                        </div>
+                        <div class="list-bottom">
+                            <div class="bottom-left">
+                                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
+                                <div class="name">安雅熙 12-06</div>
+                            </div>
+                            <div class="bottom-right">
+                                <div class="leave">
+                                    <i class="iconfont icon">&#xe70e;</i>
+                                    <span>12</span>
+                                </div>
+                                <div class="browse">
+                                    <i class="iconfont icon">&#xe67c;</i>
+                                    <span>152</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-title">
+                            <span class="title">现有一台久保田1190急售，需要用钱便宜卖5万，16年5月的车。</span>
+                        </div>
+                        <div class="list-info info-img">
+                            而如果行内含有图片和文字，在浏览器渲染出来后，读者可以发现文字和图片在垂直方向并不是沿中线居中，而是沿基线对齐。这是因为，元素默认的垂直对齐方式为基线对齐
+                        </div>
+                        <div class="list-img">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                            <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="车">
+                        </div>
+                        <div class="list-bottom">
+                            <div class="bottom-left">
+                                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
+                                <div class="name">安雅熙 12-06</div>
+                            </div>
+                            <div class="bottom-right">
+                                <div class="leave">
+                                    <i class="iconfont icon">&#xe70e;</i>
+                                    <span>12</span>
+                                </div>
+                                <div class="browse">
+                                    <i class="iconfont icon">&#xe67c;</i>
+                                    <span>152</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-title">
+                            <span class="title">现有一台久保田1190急售，需要用钱便宜卖5万，16年5月的车。</span>
+                        </div>
+                        <div class="list-info">
+                            而如果行内含有图片和文字，在浏览器渲染出来后，读者可以发现文字和图片在垂直方向并不是沿中线居中，而是沿基线对齐。这是因为，元素默认的垂直对齐方式为基线对齐
+                        </div>
+                        <div class="list-bottom">
+                            <div class="bottom-left">
+                                <img src="http://static.ydcss.com/uploads/ydui/3.jpg" alt="">
+                                <div class="name">安雅熙 12-06</div>
+                            </div>
+                            <div class="bottom-right">
+                                <div class="leave">
+                                    <i class="iconfont icon">&#xe70e;</i>
+                                    <span>12</span>
+                                </div>
+                                <div class="browse">
+                                    <i class="iconfont icon">&#xe67c;</i>
+                                    <span>152</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bottom-right">
-                    <div class="leave">
-                        <yd-icon name="comment21" color="#999" size="14px" custom></yd-icon>
-                        <span>12</span>
-                    </div>
-                    <div class="browse">
-                        <yd-icon name="liulan" color="#999" size="14px" custom></yd-icon>
-                        <span>152</span>
-                    </div>
+                <div id="item4" class="listcar">
+                    
                 </div>
             </div>
         </div>
     </div>
-    <div class="tabbar">
-        <router-link tag="div" class="tabbar-item" to="/index">
-            <svg class="iconfont moren" aria-hidden="true">
-                <use xlink:href="#icon-zhuyemoren"></use>
-            </svg>
-            <svg class="iconfont select" aria-hidden="true">
-                <use xlink:href="#icon-zhuyexuanzhong"></use>
-            </svg>
+    <footer class="tabbar">
+        <a class="tabbar-item router-link-active" href="/index">
+            <img class="def" src="./images/home.png" alt="">
+            <img class="select" src="./images/home-select.png" alt="">
             <span class="tabbar-link">首页</span>
-        </router-link>
-        <router-link tag="div" class="tabbar-item" to="/circle">
-            <svg class="iconfont moren" aria-hidden="true">
-                <use xlink:href="#icon-quanzimoren"></use>
-            </svg>
-            <svg class="iconfont select" aria-hidden="true">
-                <use xlink:href="#icon-quanzixuanzhong"></use>
-            </svg>
+        </a>
+        <a class="tabbar-item" href="/circle">
+            <img class="def" src="./images/circle.png" alt="">
+            <img class="select" src="./images/circle.png" alt="">
             <span class="tabbar-link">圈子</span>
-        </router-link>
-        <router-link tag="div" class="tabbar-item" to="/release">
-            <svg class="iconfont fabu" aria-hidden="true">
-                <use xlink:href="#icon-fabu"></use>
-            </svg>
-        </router-link>
-        <router-link tag="div" class="tabbar-item" to="/chat">
-            <svg class="iconfont moren" aria-hidden="true">
-                <use xlink:href="#icon-jiaoliumoren"></use>
-            </svg>
-            <svg class="iconfont select" aria-hidden="true">
-                <use xlink:href="#icon-jiaoliuxuanzhong"></use>
-            </svg>
+        </a>
+        <a class="tabbar-item" href="/release">
+            <img class="release" src="./images/release.png" alt="">
+        </a>
+        <a class="tabbar-item" href="/chat">
+            <img class="def" src="./images/chat.png" alt="">
+            <img class="select" src="./images/chat-select.png" alt="">
             <span class="tabbar-link">聊天</span>
-        </router-link>
-        <router-link tag="div" class="tabbar-item" to="/user">
-            <svg class="iconfont moren" aria-hidden="true">
-                <use xlink:href="#icon-wodemoren"></use>
-            </svg>
-            <svg class="iconfont select" aria-hidden="true">
-                <use xlink:href="#icon-wodexuanzhong"></use>
-            </svg>
+        </a>
+        <a class="tabbar-item" href="/user">
+            <img class="def" src="./images/user.png" alt="">
+            <img class="select" src="./images/user.png" alt="">
             <span class="tabbar-link">我的</span>
-        </router-link>
-    </div>
+        </a>
+    </footer>
 </body>
-	<script src="http://res.nongjigou.com/comm/script/jquery.lazyload.min.js?v=2.9.8"></script>
-	<script type="text/javascript" src="http://s2.nongjigou.com/comm/script/TouchSlide.1.1.js?v=2.9.8"></script>
+	<script src="http://res.nongjigou.com/comm/script/jquery.lazyload.min.js"></script>
+	<script type="text/javascript" src="http://s2.nongjigou.com/comm/script/TouchSlide.1.1.js"></script>
 	<script src="http://res.nongjigou.com/comm/script/reset.js?v=2.9.8"></script>
 	<script src="http://res.nongjigou.com/comm/script/jquery.qrcode.min.js?v=2.9.8"></script>
+    <script src="./js/index.js"></script>
 </html>
