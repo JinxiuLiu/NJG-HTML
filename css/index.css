@@ -12,7 +12,7 @@ a, button, input, label, select {
 }
 
 .content {
-    padding-bottom: .92rem;
+    padding-bottom: 48px;
 }
 
 /* 轮播图 */
@@ -58,6 +58,68 @@ a, button, input, label, select {
     background-color: #eb2525;
 }
 
+/* 实况 */
+.live {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: .8rem;
+    padding: 0 .3rem;
+    margin-bottom: .2rem;
+    border-bottom: 1px solid #e1e1e1;
+    background-color: #fff;
+}
+
+.live .live-title {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.live .live-info {
+    width: 75%;
+    height: 100%;
+    line-height: .8rem;
+    padding-right: .15rem;
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+}
+
+.live .live-info ul {
+    width: 100%;
+}
+
+.live .live-info ul a {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.live .live-more {
+    display: block;
+    height: 100%;
+    line-height: .8rem;
+    font-size: 14px;
+    color: #666;
+    position: relative;
+}
+
+.live .live-more:before {
+    content: "";
+    width: 1px;
+    height: .24rem;
+    position: absolute;
+    left: -.14rem;
+    bottom: 50%;
+    margin-bottom: -.12rem;
+    z-index: 4;
+    background-color: #ccc;
+}
+
 /* tab栏 */
 .segmented-control {
     display: flex;
@@ -70,10 +132,13 @@ a, button, input, label, select {
     border-bottom: 1px solid #e1e1e1;
 }
 
-.segmented-control .active {
+.segmented-control a {
     display: block;
     height: 100%;
     line-height: .8rem;
+}
+
+.segmented-control .active {
     color: #eb2525;
     position: relative;
 }
@@ -102,6 +167,32 @@ a, button, input, label, select {
   padding-top: .8rem;
 }
 
+/* 网格-模块 */
+.grids {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 1.79rem;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0 .3rem;
+    margin-bottom: .2rem;
+    background-color: #fff;
+}
+
+.grids a .icon {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 20px;
+    background-color: #eee;
+}
+
+.grids a span {
+    font-size: 13px;
+    color: #666;
+}
+
 /* 列表 */
 .listview {
     display: none;
@@ -115,7 +206,7 @@ a, button, input, label, select {
     display: block;
     padding: 0 .3rem;
     background-color: #fff;
-    margin-bottom: .21rem;
+    border-bottom: 1px solid #e1e1e1;
 }
 
 .list-item .list-title {
@@ -249,6 +340,130 @@ a, button, input, label, select {
     max-width: 2.2rem;
     height: 1.5rem;
     margin-left: .1rem;
+}
+
+/* 二手车列表 */
+.listcar-item {
+    width: 100%;
+    height: 2.4rem;
+    padding: 0 .3rem;
+    background-color: #fff;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.listview .listcar-top {
+    display: flex;
+    width: 100%;
+    padding-top: .2rem;
+}
+
+.listview .listcar-top .listcar-img {
+    width: 2.48rem;
+    height: 1.57rem;
+}
+
+.listview .listcar-top .listcar-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.listview .listcar-top .listcar-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 66%;
+    padding-left: .3rem;
+}
+
+.listcar-top .listcar-info .title {
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.listcar-top .listcar-info .info {
+    line-height: .64rem;
+    font-size: 12px;
+    color: #999;
+}
+
+.listcar-top .listcar-info .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.listcar-top .listcar-info .tag {
+    display: flex;
+}
+
+.listcar-top .listcar-info .tag span {
+    display: block;
+    height: 16px;
+    font-size: 10px;
+    color: #ff7e00;
+    padding: 0 4px;
+    margin-left: 5px;
+    border-radius: 2px;
+    border: 1px solid #ff7e00;
+}
+
+.listcar-top .listcar-info .price-info {
+    line-height: 11px;
+    font-size: 17px;
+    color: #ff3a3b;
+}
+
+.listcar-top .listcar-info .price-info i {
+    color: #999;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+
+.listview .listcar-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: .64rem;
+}
+
+.listview .listcar-bottom .name {
+    display: flex;
+}
+
+.listview .listcar-bottom span {
+    font-size: 12px;
+    color: #666;
+}
+
+.listview .listcar-bottom .recom_info_rzch {
+    display: block;
+    height: 16px;
+    padding: 0 5px;
+    margin-right: .2rem;
+    border-radius: 2px;
+    background-color: #ff3a3b;
+    color: #fff;
+}
+
+.listview .listcar-bottom .recom_info_sm {
+    display: block;
+    height: 16px;
+    padding: 0 5px;
+    margin-right: .2rem;
+    border-radius: 2px;
+    border: 1px solid #ff3a3b;
+    color: #ff3a3b;
+}
+
+.listview .listcar-bottom .time {
+    font-size: 12px;
+    color: #666;
 }
 
 /* footer */

@@ -2,8 +2,6 @@
  * Created by LJX on 2017-12-16 21:05:12
  */
 
-
-
 (function(global, $, doc, TouchSlide) {
 	'use strict';
 	
@@ -29,9 +27,22 @@
                 mainCell: ".bd",
                 effect: "leftLoop",
                 interTime: 10000,
+                delayTime: 600,
                 autoPage: true,
                 autoPlay: true
             })
+        },
+        autoScroll: function(){
+            function liveAnimate(obj) {
+                $(obj).find("ul").animate({
+                    marginTop : "-.8rem"
+                }, 1500, function(){
+                    $(this).css({marginTop : "0px"}).find("a:first").appendTo(this);
+                })
+            }
+            setInterval(function() {
+                liveAnimate("#liveInfo")
+            }, 5000);
         },
         addEcentListenerScroll: function() {
             var scrollTop = $('#changeTab').offset().top;
@@ -46,6 +57,7 @@
 		initialization: function() {	// 初始化
 			var maps = this.eventsMap;
             this.touchSlide();
+            this.autoScroll();
             this.addEcentListenerScroll();
             this._scanEventsMap(maps, true);
         },
