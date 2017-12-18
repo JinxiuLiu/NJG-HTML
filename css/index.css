@@ -476,8 +476,8 @@ a, button, input, label, select {
     position: fixed;
     bottom: 0;
     box-shadow: 0 -1px 5px #e1e1e1;
-    
 }
+
 .tabbar .tabbar-item {
     display: flex;
     flex-direction: column;
